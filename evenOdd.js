@@ -1,22 +1,23 @@
-// evenOdd takes an input userInput and determines if it is an even number
+// 4
 function evenOdd(userInput) {
-    // First remind the user what number they entered
-    console.log(/*You will need to log the appropriate reminder here - remember to use the variable userInput*/);
+    // 4
+    console.log('You entered ' + userInput + '.');
 
     // Now fill in the condition to determine whether the number is even
-    if (/* Put condition here */) {
+    if (userInput % 2 == 0) {
         // If it satisfies the condition, then give the user the appropriate response
-        console.log(/* Put response here */);
+        console.log('Your number is even!');
     } else {
         // Otherwise, give the alternative response
-        console.log(/* Put respose here */);
+        console.log('Your number is odd!');
     }
 }
 
 
 //Try out your function here.
 evenOdd(4);
-evenOdd(5)
+evenOdd(3);
+
 
 
 
