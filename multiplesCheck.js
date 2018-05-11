@@ -4,31 +4,31 @@ function multiplesCheck(userInput) {
     let div5;
 
     // First, fill in the condition to check to see if it is divisible by 3;
-    if  (/* Put condition here */) {
+    if  (userInput % 3 == 0) {
         div3 = true;
     } else {
         div3 = false;
     }
 
     // Next,  fill in the condition to check to see if it is divisible by 5;
-    if  (/* Put condition here */) {
+    if  (userInput % 5 == 0) {
         div5 = true;
     } else {
         div5 = false;
     }
 
     // Remind the user of what they entered
-    console.log();
+    console.log('You entered ' + userInput + '.');
 
     // Now use these values to give the appropriate output
     if (div3 && div5) {
-        console.log();
+        console.log('Your number is a multiple of both 3 and 5.');
     } else if (div3) {
-        console.log();
+        console.log('Your number is a multiple of 3 but not a multiple of 5.');
     } else if (div5) {
-        console.log();
+        console.log('Your number is a multiple of 5 but not a multiple of 3.');
     } else {
-        console.log();
+        console.log('Your number is not a multiple of 3 or 5.');
     }
 }
 

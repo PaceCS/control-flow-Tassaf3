@@ -14,9 +14,10 @@ function evenOdd(userInput) {
 }
 
 
-//Try out your function here.
+
 evenOdd(4);
 evenOdd(3);
+
 
 
 

@@ -1,25 +1,26 @@
-// evenOddExtended takes an input userInput and determines if it is an even number
+// evenOddExtended takes an input userInput and determines if it is an even input
 function evenOddExtended(userInput) {
-    // First remind the user what number they entered
-    console.log();
+    // First remind the user what input they entered
+    console.log('You entered ' + userInput + '.');
 
     // Next fill in the condition to determine if the input is actually an integer
-    if (/* Put condition here */) {
+    if ( Number.isInteger(userInput)) {
         // If the input is an integer, fill in the condition to determine if it is positive
-        if (/* Put condition here */) {
+        if (userInput > 0) {
             // If the input is a positive integer, fill in the condition to determine if it is even
-            if (/* Put condition here */) {
-                console.log();
+            if (userInput % 2 == 0) {
+                console.log('Your number is even!');
             } else {
-                console.log();
+                console.log('Your number is odd!');
             }
         } else {
-            console.log();
+            console.log('Your number is not a positive number.');
         }
     } else {
-        console.log();
+        console.log('Your input is not an integer.');
     }
 }
+
 
 
 //Try out your function here.
